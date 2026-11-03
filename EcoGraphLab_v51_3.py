@@ -7391,7 +7391,7 @@ class MainWindow(QMainWindow):
         # Scrollable explorer keeps the parameter area usable for every topic.
         left_scroll = QScrollArea(); left_scroll.setObjectName("ExplorerScroll"); left_scroll.setWidgetResizable(True); left_scroll.setFrameShape(QFrame.NoFrame)
         left = QFrame(); left.setObjectName("ControlPanel")
-        ll = QVBoxLayout(left); ll.setContentsMargins(15, 15, 15, 15); ll.setSpacing(10)
+        ll = QVBoxLayout(left); ll.setContentsMargins(13, 13, 13, 13); ll.setSpacing(10)
 
         section = QLabel("MODEL EXPLORER"); section.setObjectName("SectionLabel"); ll.addWidget(section)
         search_row = QHBoxLayout(); search_row.setSpacing(7)
@@ -16176,6 +16176,7 @@ if __name__ == "__main__":
         #ParameterCard { background:#0F1620; border:1px solid #26364B; border-radius:11px; margin-top:5px; padding-top:9px; color:#9FEFFF; font-weight:800; }
         #ParameterCard QLabel { color:#B7CAD9; font-weight:600; }
         QPushButton { border-radius:9px; padding:9px 12px; font-weight:750; min-height:20px; }
+        #ControlPanel QPushButton { border-radius:7px; padding:5px 8px; min-height:14px; font-size:10px; }
         #PrimaryButton { background:qlineargradient(x1:0,y1:0,x2:1,y2:0,stop:0 #00BFD8,stop:1 #00E4EF); color:#031016; border:1px solid #42F1FF; }
         #PrimaryButton:hover { background:#2BE4F0; }
         #PrimaryButton:pressed { background:#00AFC5; padding-top:10px; }
